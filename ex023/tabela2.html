@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela2</title>
+    <style>
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;   
+        }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--ANATOMIA DA TABELA
+    THEAD
+    TBODY
+    TFOOT
+    -->
+    <Table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td scope="row">São Paulo</td>
+                <td scope="row">45.919.049</td>
+            </tr>
+            <tr>
+                <td scope="row">Minas Gerais</td>
+                <td scope="row">21.168.791</td>
+            </tr>
+            <tr>
+                <td scope="row">Rio de Janeiro</td>
+                <td scope="row">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="row">Total de Habitantes</td>
+                <td scope="row">0000
+                </td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+</html>
